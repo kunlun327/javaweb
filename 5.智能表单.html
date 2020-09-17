@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能表单</title>
+</head>
+<body>
+    <!--
+        标签属性：
+        1.placeholder属性：用作表单中的提示
+        2.required属性：必填
+        3.readonly属性：只读，不允许修改，当前值生效的
+        4.disabled属性：失效
+        5.hidden属性：隐藏域
+        6.maxlength属性：搭配输入框使用，用来限制输入的字符数量
+        7.pattern属性：做输入框内容的格式校验
+    -->
+    <!--
+        input标签中的type属性
+        1.text  普通文本域
+        2.password 密码域
+        3.radio 单选按钮，要求name属性必须保持一致，才可以产生互斥效果  checked默认本选中
+        4.checkbox 多选框 name保持一致，可直接提交多个数据  checked默认本选中
+
+
+        select  option  下拉菜单
+        textarea 文本域
+    -->
+    <form action="#" method="get">
+        username:<input type="text" name="username" placeholder="请输入用户名" maxlength="10" pattern="^[a-z]+$"/>
+        <br />
+        password:<input type="password" name="password" />
+        <br />
+        sex:
+        <input type="radio" name="sex" value="girl" checked />女生&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="sex" value="boy"/>男生
+        <br />
+        hobby:
+        <input type="checkbox" name="hobby" value="music"/>音乐&nbsp;&nbsp;
+        <input type="checkbox" name="hobby" value="sports" checked/>运动&nbsp;&nbsp;
+        <input type="checkbox" name="hobby" value="coding"/>编程&nbsp;&nbsp;
+        <br />
+        address:
+        <select name="address">
+            <option value="安徽">安徽</option>
+            <option value="江苏">江苏</option>
+            <option value="浙江">浙江</option>
+        </select>
+        <br />
+        comment:
+        <textarea cols="10" rows="10" name="comment"></textarea>
+        <br />
+        birthday:
+        <input type="datetime-local">
+        <br />
+        <br />
+        <br />
+
+        color：
+        <input type="color" name="color"/><br />
+        Email:
+        <input type="email" name="email" required><br />
+        Number:
+        <input type="number" name="number"><br />
+        Range:
+        <input type="range" min="0" max="10" step="2" value="4"><br />
+        Tel:
+        <input type="tel" name="tel" /><br/>
+        Url:
+        <input type="url" name="url" required><br/>
+        Search:
+        <input type="search" name="search"><br/>
+
+
+        <br />
+        <br />
+        <br />
+        <input type="date">
+        <input type="time">
+        <input type="datetime">
+        <input type="week">
+        <input type="month">
+
+        <br />
+
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

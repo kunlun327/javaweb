@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+
+    <!-- form表单用来收集页面中的数据 提供name属性，才可以收集到数据 -->
+    <!-- form表单的属性：id class
+                action属性：提交到哪个后台
+                method属性：表单提交方式
+                    get方式：表单的默认提交方式，地址栏会显示数据url?username=李四&pwd=111，不够安全，不提交需要有保密性的数据，不提交大量的数据
+                    post方式：一般需要指定post，地址栏不会显示数据，一般用于提交重要私密的数据
+    -->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>身份验证-必填信息</legend>
+            <table border="1px" cellspacing="0" cellpadding="10px">
+                <tr>
+                    <th colspan="2">登录界面</th>
+                </tr>
+                <tr>
+                    <td>姓名</td>
+                    <td><input type="text" id="username" name="username" /></td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td><input type="password" id="password" name="pwd" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <!-- 当按钮是submit类型时直接提交表单 -->
+                        <input type="submit" value="登录"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="button" value="注册"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="reset" value="重置"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

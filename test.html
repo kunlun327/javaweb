@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" method="post">
+
+
+    <tr>
+        <th>用户注册</th>
+
+
+        <fieldset>
+            <legend>身份验证-必填信息</legend>
+            <table border="1px" cellspacing="0">
+                <tr>
+                    <td>用户名</td>
+                    <td><input type="text" id="username" name="username" required/></td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td><input type="password" id="password" name="password" required/></td>
+                </tr>
+                <tr>
+                    <td>密码确认</td>
+                    <td><input type="password" id="password" name="password" required/></td>
+                </tr>
+
+
+                <tr>
+                    <table border="1px" cellspacing="0">
+                        <fieldset>
+                            <legend>身份信息-选填信息</legend>
+                            </tr>
+                            <tr>
+                                <td>所在城市</td>
+                                <td><input type="text" id="city" name="city" /></td>
+                            </tr>
+                            <tr>
+                                <td>工作单位</td>
+                                <td><input type="text" id="work address" name="work address" /></td>
+                            </tr>
+                            <tr>
+                                <td>家庭住址</td>
+                                <td><input type="text" id="home address" name="home address" /></td>
+                            </tr>
+
+                            <tr>
+                                <table border="1px" cellspacing="0">
+                                    <fieldset/>
+                                        <legend>其他个人信息</legend>
+                                        </tr>
+                                        <tr>
+
+                                            <td>性别</td>
+                                            <td><select name="sex">
+                                                <option value="boy"/>男生</option>
+                                                <option value="girl"/>女生</option>
+                                            </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>爱好</td>
+                                            <td>
+                                                <input type="checkbox" name="hobby" value="music" />音乐
+                                                <input type="checkbox" name="hobby" value="soprts" />体育
+                                                <input type="checkbox" name="hobby" value="computer" />计算机
+                                            <td>
+                                        </tr>
+                                        <tr>
+                                            <td>喜欢的公司</td>
+                                            <td>
+                                                <input type="radio" name="company" value="baidu" />百度
+                                                <input type="radio" name="company" value="weiruan" />微软中国
+                                                <input type="radio" name="company" value="guge" />谷歌中国
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>个人简介</td>
+                                            <td>
+
+                                                <textarea cols="20" rows="10" name="comment"></textarea>
+                                            </td>
+                                        </tr>
+                                        </tr>
+                                        <tr>
+                                            <table border="1px" cellspacing="0">
+                                                <td><input type="button" value="提交您的资料"></td>
+                                                <td> <input type="button" value="重新填写资料">&nbsp;&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="button" value="无效按钮" disabled="disabled">&nbsp;&nbsp;</td>
+                                                </tr>
+</form>
+
+
+</body>
+</html>
