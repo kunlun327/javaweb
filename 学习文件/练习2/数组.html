@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+</head>
+<body>
+<select id="se">
+    <option>--请选择--</option>
+</select>
+</body>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script>
+    var arr=["a","b","c","d","f"];
+    $(function(){
+        $.each(arr,function(){
+            $('#se').append("<option>"+this+"</option>");
+        });
+    })
+</script>
+
+</html>
